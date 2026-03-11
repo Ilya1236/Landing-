@@ -49,6 +49,15 @@ body {
     inset 0 -1px 0 rgba(255, 255, 255, 0.04);
 }
 
+.button-column h3 {
+  margin: 0 0 12px;
+  text-align: center;
+  font-size: 56px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.96);
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.22);
+}
+
 .btn {
   display: flex;
   align-items: center;
@@ -122,9 +131,9 @@ body {
   }
 
   .button-column h3 {
-    font-size: 18px;
-    margin: 0 0 6px;
-  }
+  font-size: 40px;
+  margin: 0 0 10px;
+}
 
   .btn {
     min-height: 44px;
