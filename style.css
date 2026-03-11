@@ -112,13 +112,32 @@ body {
     background-attachment: scroll;
   }
 
+  .hero {
+    padding: 20px 10px 20px;
+    align-items: flex-end;
+  }
+
   .cards-layout {
-    grid-template-columns: 1fr;
-    max-width: 420px;
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    width: min(1100px, 100%);
+    gap: 16px;
   }
 
   .button-column {
-    min-height: auto;
+    min-height: 220px;
+    padding: 16px 12px 14px;
+    border-radius: 22px;
+  }
+
+  .button-column h3 {
+    font-size: 18px;
+    margin: 0 0 6px;
+  }
+
+  .btn {
+    min-height: 44px;
+    padding: 10px 12px;
+    font-size: 13px;
+    border-radius: 16px;
   }
 }
