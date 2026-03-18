@@ -13,7 +13,7 @@ body {
 }
 
 body {
-  background: url("back.PNG") center center / cover no-repeat;
+  background: url("87B760BF-336A-4793-8A01-F8A73F7B63F9.png") center center / cover no-repeat;
   color: white;
 }
 
@@ -118,7 +118,7 @@ body {
 
 @media (max-width: 980px) {
   body {
-    background: url("back-mobile.PNG") center center / cover no-repeat;
+    background: url("FF8584F4-2828-436B-9EC0-06750E41C11A.png") center center / cover no-repeat;
   }
 
   .hero {
