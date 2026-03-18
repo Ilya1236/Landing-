@@ -3,216 +3,43 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>VPN Коды</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html, body {
-      width: 100%;
-      min-height: 100%;
-      font-family: Arial, sans-serif;
-      overflow-x: hidden;
-    }
-
-    body {
-      background: url("87B760BF-336A-4793-8A01-F8A73F7B63F9.png") center center / cover no-repeat;
-      color: white;
-      padding: 24px;
-    }
-
-    .wrap {
-      width: min(950px, 100%);
-      margin: 0 auto;
-    }
-
-    .main-card {
-      background: rgba(255, 255, 255, 0.08);
-      border: 1px solid rgba(255, 255, 255, 0.18);
-      backdrop-filter: blur(18px);
-      -webkit-backdrop-filter: blur(18px);
-      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.22);
-      border-radius: 28px;
-      padding: 24px;
-    }
-
-    h1 {
-      text-align: center;
-      font-size: 32px;
-      margin-bottom: 20px;
-    }
-
-    .top-actions {
-      display: flex;
-      gap: 12px;
-      margin-bottom: 20px;
-      flex-wrap: wrap;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      text-decoration: none;
-      padding: 14px 18px;
-      border-radius: 16px;
-      font-size: 14px;
-      font-weight: 700;
-      border: none;
-      cursor: pointer;
-      transition: transform 0.2s ease, opacity 0.2s ease;
-    }
-
-    .btn:hover {
-      transform: translateY(-2px);
-      opacity: 0.96;
-    }
-
-    .back-btn {
-      background: rgba(255, 255, 255, 0.14);
-      color: white;
-      border: 1px solid rgba(255, 255, 255, 0.2);
-    }
-
-    .codes {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 14px;
-    }
-
-    .code-card {
-      min-width: 0;
-      padding: 14px;
-      border-radius: 18px;
-      background: rgba(255, 255, 255, 0.07);
-      border: 1px solid rgba(255, 255, 255, 0.12);
-    }
-
-    .code-title {
-      font-size: 15px;
-      font-weight: 700;
-      margin-bottom: 10px;
-      word-break: break-word;
-    }
-
-    textarea {
-      width: 100%;
-      min-height: 110px;
-      resize: vertical;
-      border: none;
-      outline: none;
-      padding: 12px;
-      border-radius: 12px;
-      background: rgba(0, 0, 0, 0.22);
-      color: white;
-      font-size: 12px;
-      line-height: 1.5;
-      margin-bottom: 10px;
-      word-break: break-all;
-      overflow-wrap: anywhere;
-      white-space: pre-wrap;
-    }
-
-    .copy-btn {
-      width: 100%;
-      background: rgba(255, 255, 255, 0.14);
-      color: white;
-      border: 1px solid rgba(255, 255, 255, 0.18);
-    }
-
-    @media (max-width: 980px) {
-      body {
-        background: url("FF8584F4-2828-436B-9EC0-06750E41C11A.png") center center / cover no-repeat;
-        padding: 14px;
-      }
-
-      .main-card {
-        padding: 16px;
-        border-radius: 22px;
-      }
-
-      h1 {
-        font-size: 24px;
-      }
-
-      .codes {
-        grid-template-columns: 1fr;
-      }
-
-      .btn {
-        width: 100%;
-      }
-
-      textarea {
-        min-height: 90px;
-        font-size: 11px;
-      }
-    }
-  </style>
+  <title>Landing</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="wrap">
-    <div class="main-card">
-      <h1>VPN Коды</h1>
-
-      <div class="top-actions">
-        <a href="index.html" class="btn back-btn">НАЗАД</a>
+  <section class="hero">
+    <div class="cards-layout">
+      <div class="button-column">
+        <h3>IKRA</h3>
+        <a href="https://app.beikra.tech/deals" class="btn site-btn" target="_blank">САЙТ</a>
+        <a href="https://github.com/Ilya1236/Landing-/releases/download/ikra/Automation.apk" class="btn action-btn" target="_blank">СКАЧАТЬ</a>
       </div>
 
-      <div class="codes">
-        <div class="code-card">
-          <div class="code-title">Германия 🇩🇪🟢LTE</div>
-          <textarea readonly id="vpn1">vless://eac0b7af-7656-4362-b6d2-8a11a174737f@84.201.158.43:443?type=tcp&security=reality&pbk=Tt8cQK7R-qgu3J_b1B7B_tId7MGL_oR4XDRdW0cXcCs&fp=chrome&sni=eh.vk.com&sid=44ec0b27f13f51bd&spx=%2F&flow=xtls-rprx-vision</textarea>
-          <button class="btn copy-btn" onclick="copyCode('vpn1', this)">КОПИРОВАТЬ</button>
+      <div class="button-column">
+        <h3>Tread MO</h3>
+        <a href="https://trademo.io" class="btn site-btn" target="_blank">САЙТ</a>
+        <a href="trademo_2.1.6_release.apk" class="btn action-btn">СКАЧАТЬ</a>
+      </div>
+
+      <div class="button-column">
+        <h3>MasMo</h3>
+        <a href="https://massmo.io" class="btn site-btn" target="_blank">САЙТ</a>
+        <a href="MassMo-1.0.82-release.apk" class="btn action-btn">СКАЧАТЬ</a>
+      </div>
+
+      <div class="button-column vpn-card">
+        <div class="vpn-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2L5 5v6c0 5.25 3.4 10.17 7 11 3.6-.83 7-5.75 7-11V5l-7-3zm0 3.18l4 1.72V11c0 3.84-2.32 7.63-4 8.74C10.32 18.63 8 14.84 8 11V6.9l4-1.72z"/>
+          </svg>
         </div>
 
-        <div class="code-card">
-          <div class="code-title">Германия 🇩🇪🟢LTE №2</div>
-          <textarea readonly id="vpn2">vless://eac0b7af-7656-4362-b6d2-8a11a174737f@84.201.158.43:443?type=tcp&security=reality&pbk=Tt8cQK7R-qgu3J_b1B7B_tId7MGL_oR4XDRdW0cXcCs&fp=chrome&sni=music.yandex.ru&sid=804a73b2a1&spx=%2F&flow=xtls-rprx-vision</textarea>
-          <button class="btn copy-btn" onclick="copyCode('vpn2', this)">КОПИРОВАТЬ</button>
-        </div>
+        <h3>VPN</h3>
 
-        <div class="code-card">
-          <div class="code-title">Германия 🇩🇪🟢LTE №3</div>
-          <textarea readonly id="vpn3">vless://eac0b7af-7656-4362-b6d2-8a11a174737f@84.201.158.43:443?type=tcp&security=reality&pbk=Tt8cQK7R-qgu3J_b1B7B_tId7MGL_oR4XDRdW0cXcCs&fp=chrome&sni=rutube.ru&sid=44ec0b27f13f51bd&spx=%2F&flow=xtls-rprx-vision</textarea>
-          <button class="btn copy-btn" onclick="copyCode('vpn3', this)">КОПИРОВАТЬ</button>
-        </div>
-
-        <div class="code-card">
-          <div class="code-title">Германия 🇩🇪🟢LTE №4</div>
-          <textarea readonly id="vpn4">vless://eac0b7af-7656-4362-b6d2-8a11a174737f@84.201.158.43:443?type=tcp&security=reality&pbk=Tt8cQK7R-qgu3J_b1B7B_tId7MGL_oR4XDRdW0cXcCs&fp=chrome&sni=login.vk.com&sid=44ec0b27f13f51bd&spx=%2F&flow=xtls-rprx-vision</textarea>
-          <button class="btn copy-btn" onclick="copyCode('vpn4', this)">КОПИРОВАТЬ</button>
-        </div>
-
-        <div class="code-card">
-          <div class="code-title">Германия 🇩🇪🟢LTE №5</div>
-          <textarea readonly id="vpn5">vless://eac0b7af-7656-4362-b6d2-8a11a174737f@84.201.158.43:443?type=tcp&security=reality&pbk=Tt8cQK7R-qgu3J_b1B7B_tId7MGL_oR4XDRdW0cXcCs&fp=chrome&sni=ads.x5.ru&sid=6029e4e5&spx=%2F&flow=xtls-rprx-vision</textarea>
-          <button class="btn copy-btn" onclick="copyCode('vpn5', this)">КОПИРОВАТЬ</button>
-        </div>
-
-        <div class="code-card">
-          <div class="code-title">Германия 🇩🇪🟢LTE №6</div>
-          <textarea readonly id="vpn6">vless://eac0b7af-7656-4362-b6d2-8a11a174737f@84.201.158.43:443?type=tcp&security=reality&pbk=Tt8cQK7R-qgu3J_b1B7B_tId7MGL_oR4XDRdW0cXcCs&fp=chrome&sni=max.ru&sid=aa3e26f0af4273&spx=%2F&flow=xtls-rprx-vision</textarea>
-          <button class="btn copy-btn" onclick="copyCode('vpn6', this)">КОПИРОВАТЬ</button>
-        </div>
+        <a href="vpn.html" class="btn site-btn" target="_blank">САЙТ</a>
+        <a href="https://github.com/KaringX/karing/releases/download/v1.2.15.1806/karing_1.2.15.1806_android_arm.apk" class="btn action-btn" target="_blank">СКАЧАТЬ</a>
       </div>
     </div>
-  </div>
-
-  <script>
-    function copyCode(id, button) {
-      const text = document.getElementById(id).value;
-      navigator.clipboard.writeText(text).then(() => {
-        const oldText = button.textContent;
-        button.textContent = "СКОПИРОВАНО";
-        setTimeout(() => {
-          button.textContent = oldText;
-        }, 1500);
-      });
-    }
-  </script>
+  </section>
 </body>
 </html>
