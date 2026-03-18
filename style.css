@@ -9,32 +9,34 @@ body {
   width: 100%;
   min-height: 100%;
   font-family: Arial, sans-serif;
+  overflow-x: hidden;
 }
 
 body {
-  background: url("back.PNG") center center / cover no-repeat fixed;
+  background: url("back.PNG") center center / cover no-repeat;
   color: white;
 }
 
 .hero {
   min-height: 100vh;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   padding: 40px 24px;
 }
 
 .cards-layout {
-  width: min(1500px, 100%);
+  width: min(1400px, 100%);
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 34px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
   align-items: start;
 }
 
 .button-column {
-  min-height: 300px;
-  padding: 28px 22px;
+  min-width: 0;
+  min-height: 280px;
+  padding: 24px 20px;
   border-radius: 28px;
   display: flex;
   flex-direction: column;
@@ -51,14 +53,17 @@ body {
 .button-column h3 {
   font-size: 28px;
   font-weight: 700;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
   color: white;
+  word-break: break-word;
 }
 
 .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  max-width: 100%;
   text-decoration: none;
   padding: 14px 18px;
   border-radius: 16px;
@@ -86,7 +91,7 @@ body {
 }
 
 .vpn-card {
-  position: relative;
+  grid-column: 1 / -1;
   justify-content: flex-start;
 }
 
@@ -111,71 +116,9 @@ body {
   fill: white;
 }
 
-.vpn-codes {
-  margin-top: 8px;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  text-align: left;
-}
-
-.vpn-code-item {
-  padding: 12px;
-  border-radius: 18px;
-  background: rgba(255, 255, 255, 0.07);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-}
-
-.vpn-code-title {
-  font-size: 14px;
-  font-weight: 700;
-  margin-bottom: 8px;
-  color: white;
-}
-
-.vpn-code-item textarea {
-  width: 100%;
-  min-height: 96px;
-  resize: none;
-  border: none;
-  outline: none;
-  padding: 10px;
-  border-radius: 12px;
-  background: rgba(0, 0, 0, 0.22);
-  color: white;
-  font-size: 12px;
-  line-height: 1.4;
-  margin-bottom: 10px;
-}
-
-.copy-btn {
-  width: 100%;
-  border: none;
-  cursor: pointer;
-  padding: 12px 14px;
-  border-radius: 14px;
-  font-size: 13px;
-  font-weight: 700;
-  background: rgba(255, 255, 255, 0.14);
-  color: white;
-  transition: transform 0.2s ease, opacity 0.2s ease;
-}
-
-.copy-btn:hover {
-  transform: translateY(-2px);
-  opacity: 0.96;
-}
-
-@media (max-width: 1200px) {
-  .cards-layout {
-    grid-template-columns: repeat(2, 1fr);
-    width: min(900px, 100%);
-  }
-}
-
 @media (max-width: 980px) {
   body {
-    background: url("back-mobile.PNG") center center / cover no-repeat fixed;
+    background: url("back-mobile.PNG") center center / cover no-repeat;
   }
 
   .hero {
@@ -184,12 +127,12 @@ body {
 
   .cards-layout {
     grid-template-columns: 1fr;
-    width: min(700px, 100%);
+    width: 100%;
     gap: 16px;
   }
 
   .button-column {
-    min-height: 220px;
+    min-height: auto;
     padding: 20px 14px;
     border-radius: 22px;
     gap: 12px;
@@ -205,6 +148,10 @@ body {
     border-radius: 14px;
   }
 
+  .vpn-card {
+    grid-column: auto;
+  }
+
   .vpn-icon {
     width: 58px;
     height: 58px;
@@ -215,10 +162,5 @@ body {
   .vpn-icon svg {
     width: 28px;
     height: 28px;
-  }
-
-  .vpn-code-item textarea {
-    min-height: 88px;
-    font-size: 11px;
   }
 }
